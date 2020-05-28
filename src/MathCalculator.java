@@ -1,12 +1,12 @@
 public class MathCalculator implements Calculator {
 
 	@Override
-	public double add(double first, double second) {
+	public double plus(double first, double second) {
 		return first + second;
 	}
 
 	@Override
-	public double sub(double first, double second) {
+	public double subtract(double first, double second) {
 		return first - second;
 	}
 

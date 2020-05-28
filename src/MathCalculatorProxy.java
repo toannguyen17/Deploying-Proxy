@@ -6,25 +6,25 @@ public class MathCalculatorProxy implements Calculator {
 	}
 
 	@Override
-	public double add(double first, double second) {
+	public double plus(double first, double second) {
 		if(first / 2 + second / 2 >= Double.MAX_VALUE / 2){
 			throw new RuntimeException("Out of range");
 		}
 		if(first / 2 + second / 2 <= Double.MIN_VALUE / 2){
 			throw new RuntimeException("Out of range");
 		}
-		return mathCalculator.add(first, second);
+		return mathCalculator.plus(first, second);
 	}
 
 	@Override
-	public double sub(double first, double second) {
+	public double subtract(double first, double second) {
 		if(first / 2 - second / 2 >= Double.MAX_VALUE / 2){
 			throw new RuntimeException("Out of range");
 		}
-		if(first / 2 - second / 2 <= Double.MIN_VALUE / 2){
+		if(first/2 - second/2 <= Double.MIN_VALUE/2){
 			throw new RuntimeException("Out of range");
 		}
-		return mathCalculator.sub(first, second);
+		return mathCalculator.subtract(first, second);
 	}
 
 	@Override
